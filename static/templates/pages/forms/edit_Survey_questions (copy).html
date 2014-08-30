@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                       Edit Survey Questions  
+                        <small>Control panel</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="/accounts/auth"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Edit Questions</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box box-primary"> <a href="/surveys/newsurveys"> <p>New Survey</p> </a>
+                                
+                                <div class="box-header">
+                                    <h3 class="box-title">Data Table</h3>   
+                                    
+                                </div><!-- /.box-header -->
+                                
+                                <div class="box-body table-responsive">
+                                    <table id="example2" class="table table-bordered table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th >Rendering engine</th>
+                                                <th>Browser</th>
+                                                <th>Platform(s)</th>
+                                                <th>Engine version</th>
+                                                <th>CSS grade</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td contenteditable='true' >Trident</td>
+                                                <td contenteditable='true'>Internet
+                                                    Explorer 4.0</td>
+                                                <td contenteditable='true'>Win 95+</td>
+                                                <td contenteditable='true'> 4</td>
+                                                <td contenteditable='true'>X</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Trident</td>
+                                                <td contenteditable='true'>Internet
+                                                    Explorer 5.0</td>
+                                                <td contenteditable='true'>Win 95+</td>
+                                                <td contenteditable='true'>5</td>
+                                                <td contenteditable='true'>C</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Trident</td>
+                                                <td contenteditable='true'>Internet
+                                                    Explorer 5.5</td>
+                                                <td contenteditable='true'>Win 95+</td>
+                                                <td contenteditable='true'>5.5</td>
+                                                <td contenteditable='true'>A</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Trident</td>
+                                                <td contenteditable='true'>Internet
+                                                    Explorer 6</td>
+                                                <td contenteditable='true'>Win 98+</td>
+                                                <td contenteditable='true'>6</td>
+                                                <td contenteditable='true'>A</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Trident</td>
+                                                <td contenteditable='true'>Internet Explorer 7</td>
+                                                <td contenteditable='true'>Win XP SP2+</td>
+                                                <td contenteditable='true'>7</td>
+                                                <td contenteditable='true'>A</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Trident</td>
+                                                <td contenteditable='true'>AOL browser (AOL desktop)</td>
+                                                <td contenteditable='true'>Win XP</td>
+                                                <td contenteditable='true'>6</td>
+                                                <td contenteditable='true'>A</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Gecko</td>
+                                                <td contenteditable='true'>Firefox 1.0</td>
+                                                <td contenteditable='true'>Win 98+ / OSX.2+</td>
+                                                <td contenteditable='true'>1.7</td>
+                                                <td contenteditable='true'>A</td>
+                                                  <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            <tr>
+                                                <td contenteditable='true'>Gecko</td>
+                                                <td contenteditable='true'>Firefox 1.5</td>
+                                                <td contenteditable='true'>Win 98+ / OSX.2+</td>
+                                                <td contenteditable='true'>1.8</td>
+                                                <td contenteditable='true'>A</td>
+                                                 <td class="text-center"><a class='btn btn-warning btn-xs' href="/surveys/viewurveys"><span class="glyphicon glyphicon-open"></span> View </a>  <a class='btn btn-info btn-xs' href="/surveys/editsurveys"><span class="glyphicon glyphicon-edit"></span> Edit</a> <!-- <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a> --></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Rendering engine</th>
+                                                <th>Browser</th>
+                                                <th>Platform(s)</th>
+                                                <th>Engine version</th>
+                                                <th>CSS grade</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                            
+                          
+                        </div>
+                    </div>
+
+                </section><!-- /.content --> 
+{% endblock content %}
+
+

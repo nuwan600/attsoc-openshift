@@ -1,0 +1,166 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>
+                        Registration
+                        <small>Form</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="/accounts/allusers">All Users</a></li>
+                        
+                          <li class="active"> Registration</li>
+                        
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                          <!-- left column -->
+                        <div class="col-md-12">
+                            <!-- general form elements -->
+                            <div class="box box-primary">
+                                <div class="box-header">
+                                   
+                                     <h3 class="box-title">Add New Users</h3>
+                                   
+                                </div><!-- /.box-header -->
+                                <!-- form start -->
+                                <!-- left column -->
+                         
+                            <div class="col-md-12 " >
+                             
+                             <!-- general form elements -->
+                             <!-- form start -->
+                               <div class="col-sm-8 col-md-offset-2">
+                                   <div class="box-body">
+                                   {% if messages.error %}
+                                         <div class="alert alert-danger alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <strong>Error! </strong>{{ messages.error }}.
+                                        </div>
+                                    {% endif %}
+
+                                    {% if messages.success %}
+                                         <div class="alert alert-success alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <strong>Done! </strong> {{ messages.success }}.
+                                        </div>
+                                    {% endif %}
+
+                                      
+                                        <form id="Admin-HR" role="form" action="/accounts/register"  method="post" >{% csrf_token %}
+                                           <!-- <div class="form-group">
+                                            <label>Select Department or Section</label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                          </div> -->
+                                            
+                                           <div class="form-group">
+                                                   <label for="first_name">Firest Name</label>
+                                                   <input type="text" name="first_name" class="form-control input-sm" id="first_name" placeholder="Enter First Name"  value="{% if user_data %} {{user_data.first_name}} {% endif %}" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                   <label for="last_name"> Last Name</label>
+                                                   <input type="text" name="last_name" class="form-control input-sm" id="last_name" placeholder="Enter Last Name" required>
+                                            </div>
+
+                                           <div class="form-group">
+                                                   <label for="Question">Email</label>
+                                                   <input type="email" name="email" class="form-control input-sm" id="email" placeholder="you@example.com" required>
+                                            </div>
+                                           
+                                          <!--  <div class="form-group">
+                                                   <label for="Contact_Number">Contact Number</label>
+                                                   <input type="text" name="Contact" class="form-control input-sm" id="exampleInputEmail1" placeholder="Enter Contact Number" value="{% if user_date %} {user_date.first_name} {% endif %}" required>
+                                            </div> -->
+
+                                            <div class="form-group">
+                                                   <label for="username">Username</label>
+                                                   <input type="text" name="username" class="form-control input-sm" id="username" placeholder="Enter Username" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                   <label for="password">Password</label>
+                                                   <input type="password" name="password" class="form-control input-sm" id="password" placeholder="Enter password" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                   <label for="con_password">Confirm Password</label>
+                                                   <input type="password" class="form-control input-sm" id="con_password" name="con_password" placeholder="Confirm Password"  required>
+                                            </div>
+
+                                            <label>
+                                                    <input type="checkbox" name="active" class="minimal"  /> Active      
+                                                    
+                                            </label>
+                                             
+                                            <label>
+                                                <input type="radio" name="admin" class="minimal" /> Administrator                                                   
+                                            </label>
+                                           <label>
+                                                <input type="radio" name="HR" class="minimal" /> HR                                                   
+                                            </label>
+                                           <div class="box-footer">
+                                                <button type="submit" class="btn btn-primary pull-right" >Submit</button>
+                                            </div>
+                                            </br>
+                                       </form>
+                                   </div><!-- /.box-body -->
+                               </div>
+                              
+                                 
+                                    <div class="col-sm-8 col-md-offset-2">
+                                      <div class="box-body">
+                                       <form role="form" action="/accounts/register"  method="post" >{% csrf_token %}
+                                            <div class="box-header">
+                                                <h3 class="box-title">OR Create Employees</h3>
+                                            </div><!-- /.box-header -->
+                                           <!-- <div class="form-group">
+                                            <label>Select Department or Section</label>
+                                            <select class="form-control">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                                <option>option 5</option>
+                                            </select>
+                                          </div> -->
+                                           
+                                         
+                                            <div class="form-group">
+                                                   <label for="Users">Number of Users</label>
+                                                   <input type="number" name="Users" min="1" class="form-control input-sm" id="su_Users" required>
+                                            </div>
+                                            <div class="box-footer">
+                                                <button type="submit" class="btn btn-primary pull-right" >Submit</button>
+                                            </div>
+                                            </br>
+                                       </form>
+                                   </div><!-- /.box-body -->
+                                 </div>
+
+                                
+                                 
+                           
+                         </div><!--/.col (left) -->
+                        <!-- right column -->
+                            </div>
+                        </div>
+                     </div>   <!-- /.row -->
+                </section><!-- /.content -->
+
+               
+           
+{% endblock %}
+     
